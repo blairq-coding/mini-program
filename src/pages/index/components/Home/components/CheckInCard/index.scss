@@ -1,0 +1,74 @@
+.CheckInCard {
+    position: relative;
+    width: 680px;
+    height: 680px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    &-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &-date {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        text-align: right;
+    }
+
+    &-verse {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    &-wrapper {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: transparent;
+    }
+
+    &-button {
+        background: rgb(255, 201, 53);
+        border: rgb(255, 201, 53);
+        width: 530px;
+        height: 120px;
+        border-radius: 60px;
+
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            & > text {
+                line-height: 1.2;
+                color: rgb(51, 51, 51);
+                &:first-child {
+                    font-weight: bolder;
+                }
+                &:last-child {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}

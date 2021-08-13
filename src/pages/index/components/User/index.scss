@@ -1,0 +1,52 @@
+.User {
+    background: rgb(247, 247, 247);
+    position: relative;
+    height: 100%;
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 30px 20px;
+        background: #fff;
+        &-avatar {
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &-nickname {
+            margin-left: 20px;
+            font-size: 40px;
+        }
+    }
+
+    &-content {
+        margin: 30px;
+        background: #fff;
+        border-radius: 16px;
+
+        & > view {
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            .at-icon {
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            & > view {
+                &:nth-child(2) {
+                    flex: 1;
+                }
+            }
+        }
+
+        & > .at-button {
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            border: none;
+        }
+    }
+}

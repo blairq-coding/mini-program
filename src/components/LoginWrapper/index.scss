@@ -1,0 +1,9 @@
+.LoginWrapper {
+    height: fit-content;
+    padding: 0;
+    border: none;
+    & > view {
+        position: relative;
+        z-index: -1;
+    }
+}

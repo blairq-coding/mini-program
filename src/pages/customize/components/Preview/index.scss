@@ -1,0 +1,45 @@
+.Preview {
+    position: relative;
+    &-date {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        text-align: right;
+        .yearMonth {
+            font-size: 24px;
+        }
+    }
+
+    &-datas {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        & > view {
+            &:first-child {
+                font-size: 24px;
+            }
+            &:nth-child(2) {
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &-avatar {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &-texts {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        font-size: 24px;
+    }
+}
