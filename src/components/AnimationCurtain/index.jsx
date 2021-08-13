@@ -18,6 +18,7 @@ export default (props) => {
   const catchEvent = (event) => {
     event.stopPropagation()
   }
+  
   return (
     <View className={classnames('AnimationCurtain', props.className, { 'show': props.show })}>
       <View className='AnimationCurtain-mask' onClick={handleClose}></View>
